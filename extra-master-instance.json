@@ -1,0 +1,92 @@
+{
+  "masterHost": "localhost",
+  "systemActions": [],
+  "startupScripts": [
+    {
+      "name": "s3://bigdatateaching/bootstrap/bigdata-bootstrap.sh",
+      "args": []
+    }
+  ],
+  "hadoopEnv": {},
+  "jobFlowId": "j-1PJ03JVIDQH3T",
+  "jobFlowCreationInstant": 1593582748018,
+  "instanceCount": 3,
+  "masterInstanceType": "m5.xlarge",
+  "instanceGroups": {
+    "CORE": [
+      {
+        "instanceType": "m5.xlarge",
+        "instanceCount": 2
+      }
+    ],
+    "MASTER": [
+      {
+        "instanceType": "m5.xlarge",
+        "instanceCount": 1
+      }
+    ]
+  },
+  "slaveInstanceType": "m5.xlarge",
+  "supportedProducts": [],
+  "runJobTracker": false,
+  "runTaskTracker": false,
+  "runNameNode": true,
+  "runDataNode": false,
+  "runResourceManager": true,
+  "runNodeManager": false,
+  "instanceGroupId": "ig-3IO8Y3HB7E9EE",
+  "instanceRole": "master",
+  "marketType": "on_demand",
+  "instanceGroupInstanceType": "m5.xlarge",
+  "hasIAMInstanceProfile": true,
+  "hadoopVersion": "Hadoop_2_8_5",
+  "region": "us-east-1",
+  "regionSet": "aws",
+  "deleteSteps": false,
+  "stepConcurrencyLevel": 1,
+  "debuggingInfo": {
+    "sdbDisabled": false,
+    "sqsEnabled": true,
+    "sqsQueueName": "AWS-ElasticMapReduce-j-1PJ03JVIDQH3T",
+    "stepFailureAnalysisEnabled": true,
+    "emrLogAnalyticsEnabled": true,
+    "appViewerForSparkEnabled": true,
+    "frequencyOfUpload": 120,
+    "appViewerDelayBetweenCyclesInSeconds": 120,
+    "appViewerFileSizeThresholdToDelayUploadInGb": 2.0,
+    "appViewerLargeFileCycleDelay": 2
+  },
+  "accountId": "381015436449",
+  "releaseLabel": "emr-5.29.0",
+  "serviceEndpoints": {
+    "S3_DEFAULT": "s3.amazonaws.com",
+    "S3_LOCAL": "s3.amazonaws.com",
+    "DYNAMODB": "dynamodb.us-east-1.amazonaws.com",
+    "MONITORING": "http://monitor-api.amazon.com",
+    "DNS": "dns-manage.amazon.com",
+    "TIMBER": "https://timber-iad.amazon.com",
+    "CLOUDWATCH": "monitoring.us-east-1.amazonaws.com",
+    "EDP": "datapipeline.us-east-1.amazonaws.com",
+    "STS": "sts.us-east-1.amazonaws.com",
+    "EC2": "ec2.us-east-1.amazonaws.com",
+    "SNS": "sns.us-east-1.amazonaws.com",
+    "IAMADMIN": "iamadmin.amazonaws.com",
+    "RDS": "rds.us-east-1.amazonaws.com",
+    "SWF": "swf.us-east-1.amazonaws.com",
+    "MONITORING_READ": "http://monitor-api.amazon.com",
+    "SIMPLEDB": "sdb.amazonaws.com",
+    "EMR": "elasticmapreduce.us-east-1.amazonaws.com",
+    "KMS": "kms.us-east-1.amazonaws.com",
+    "IAM": "iam.amazonaws.com",
+    "SQS": "sqs.us-east-1.amazonaws.com",
+    "SIM": "https://maxis-service-prod-iad.amazon.com",
+    "FLUXO": "ticket-api.amazon.com",
+    "KINESIS": "kinesis.us-east-1.amazonaws.com",
+    "AEGIR": "https://aegir-us-east-1.amazon.com",
+    "REDSHIFT": "redshift.us-east-1.amazonaws.com",
+    "ANYSCALE": "autoscaling.us-east-1.amazonaws.com"
+  },
+  "numCandidates": 1,
+  "haEnabled": false,
+  "candidates": []
+}
